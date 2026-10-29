@@ -1,46 +1,92 @@
-# Getting Started with Create React App
+# React Authentication & Dashboard Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A user authentication and dashboard application built with **React** and **TypeScript**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 1. Environment Setup & Installation
 
-### `npm start`
+### 1.1 Prerequisites
+Ensure the following tools are installed on your machine before running the project:
+- **Node.js**: Recommended version `v18.x` or later (Download from [Node.js Official Website](https://nodejs.org/)).
+- **Package Manager**:
+  - **npm**: Comes bundled with Node.js.
+  - **Yarn** (Recommended): If not already installed, install it globally via npm:
+    ```bash
+    npm install -g yarn
+    ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 1.2 Installing Dependencies
+Open a terminal in the project directory (`project-react`) and install the required packages:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Using Yarn (Recommended):
+```bash
+yarn install
+```
 
-### `npm test`
+Or using npm:
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 2. Running the Application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Once the dependencies are installed, start the local development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Using Yarn (Recommended):
+```bash
+yarn start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Or using npm:
+```bash
+npm start
+```
 
-### `npm run eject`
+The application will compile and automatically open in your default browser. If it does not open automatically, visit:
+`http://localhost:3333`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 3. Environment Variables & Port Configuration (`.env`)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The project root contains an environment configuration file [`.env`](.env):
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```env
+PORT=3333
+```
 
-## Learn More
+- **How it works**: By default, Create React App (`react-scripts`) serves applications on port `3000`. By configuring `PORT=3333` in `.env`, the local development server will start on port `3333`, making the application accessible at `http://localhost:3333`.
+- **Customizing the Port**: If you encounter port conflicts or prefer a different port, modify the port number in `.env` (e.g., `PORT=8080`) and restart the development server with `yarn start`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 4. Project Structure & Core File Explanations
+
+### 4.1 `src/Components/` Directory (Component Modules)
+Contains the core UI components for authentication and user management:
+
+- **[`Auth.tsx`](src/Components/Auth.tsx)**: **User Authentication Component (Login & Sign Up)**
+
+- **[`Dashboard.tsx`](src/Components/Dashboard.tsx)**: **User Dashboard Component (Welcome Screen)**
+
+---
+
+### 4.2 `src/CSS/` Directory (Styling Modules)
+Contains dedicated stylesheets for the application:
+
+- **[`Auth.css`](src/CSS/Auth.css)**: **Styles for Authentication & Dashboard Views**
+
+---
+
+## 5. Attachments of the login & registration page
+
+### 5.1 `Screenshots/` Directory (Screenshots of UI)
+
+---
+
+## 6. SQL Assignment
+
+### 6.1 `SQL Assignment Answer.docx` File (Answer of SQL Assignment)
